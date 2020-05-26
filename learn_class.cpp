@@ -76,7 +76,7 @@ int main() {
     zoo.push_back(&a);
     zoo.push_back(&b);
     zoo.push_back(&c);
-    for (int i=0; i<zoo.size();i++) {
+    for (int i=0; i<zoo.size(); i++) {
         p = zoo[i];
         cout << p->getType() << " says: " << p->say() << endl;
     }
