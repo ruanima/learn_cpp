@@ -27,8 +27,8 @@ private:
     int age;
 public:
     string type;
-    virtual string say(void);
-    virtual string getType(void);
+    string say(void);
+    string getType(void);
 };
 
 string Dog::say(void) {
@@ -44,8 +44,8 @@ private:
     int age;
 public:
     string type;
-    virtual string say(void);
-    virtual string getType(void);
+    string say(void);
+    string getType(void);
 };
 
 string Cat::say(void) {
