@@ -15,7 +15,7 @@ public:
     virtual string getType(void);
 };
 string Animal::say(void) {
-    return "....";
+    return "say something";
 }
 string Animal::getType(void) {
     return type;
@@ -56,7 +56,7 @@ string Cat::getType(void) {
 }
 
 int main() {
-    Animal a, *p;
+    Animal a;
     Dog b;
     Cat c;
     a.type = "A";
@@ -71,8 +71,8 @@ int main() {
     zoo.push_back(&b);
     zoo.push_back(&c);
     for (int i=0; i<zoo.size(); i++) {
-        p = zoo[i];
-        cout << p->getType() << " says: " << p->say() << endl;
+        Animal &p = *(zoo[i]);
+        cout << p.getType() << " says: " << p.say() << endl;
     }
     return 0;
 }
