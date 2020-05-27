@@ -9,11 +9,8 @@ class Animal {
 private:
     int eyes;
     int age;
-    string type;
 public:
-    Animal() {
-        type = "Animal";
-    };
+    string type;
     virtual string say(void);
     virtual string getType(void);
 };
@@ -28,11 +25,8 @@ class Dog: public Animal {
 private:
     int eyes;
     int age;
-    string type;
 public:
-    Dog() {
-        type = "Dog";
-    };
+    string type;
     virtual string say(void);
     virtual string getType(void);
 };
@@ -48,11 +42,8 @@ class Cat: public Animal {
 private:
     int eyes;
     int age;
-    string type;
 public:
-    Cat() {
-        type = "Cat";
-    };
+    string type;
     virtual string say(void);
     virtual string getType(void);
 };
@@ -68,6 +59,9 @@ int main() {
     Animal a, *p;
     Dog b;
     Cat c;
+    a.type = "A";
+    b.type = "D";
+    c.type = 'C';
     cout << "Animal says: " << a.say() << endl;
     cout << "Dog says: " << b.say() << endl;
     cout << "Cat says: " << c.say() << endl;
