@@ -26,7 +26,7 @@ private:
     int eyes;
     int age;
 public:
-    string type;
+    // string type;
     string say(void);
     string getType(void);
 };
@@ -43,7 +43,7 @@ private:
     int eyes;
     int age;
 public:
-    string type;
+    // string type;
     string say(void);
     string getType(void);
 };
